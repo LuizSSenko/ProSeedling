@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>953</width>
+    <height>1018</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(113, 113, 118);</string>
+  </property>
+  <widget class="QPushButton" name="btnEraser">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>420</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(216, 229, 253,255);
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color: rgb(32, 24, 255);
+border-radius:4;</string>
+   </property>
+   <property name="text">
+    <string>Eraser (e)</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioBtnNormalSeed">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>640</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string> Normal Seed (n)</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioBtnAbnormalSeed">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>670</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string> Abnormal Seed (a)</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioBtnDeadSeed">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>700</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string> Dead Seed (d)</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>60</y>
+     <width>361</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Root Length</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="label_total_length">
+      <property name="styleSheet">
+       <string>font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_seed_no">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Hypocotyl Length</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Seed No.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Total Length</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="label_seed_health">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_root_length">
+      <property name="styleSheet">
+       <string>font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_hypocotyl_length">
+      <property name="styleSheet">
+       <string>font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>610</y>
+     <width>261</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color:white;</string>
+   </property>
+   <property name="title">
+    <string>Change to</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPoint">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>470</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(216, 229, 253,255);
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color: rgb(32, 24, 255);
+border-radius:4;</string>
+   </property>
+   <property name="text">
+    <string>BreakPoint (b)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDrawHyp">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>320</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(216, 229, 253,255);
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color: rgb(32, 24, 255);
+border-radius:4;</string>
+   </property>
+   <property name="text">
+    <string>Draw Hypocotyl (1)</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDrawRoot">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>370</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(216, 229, 253,255);
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color: rgb(32, 24, 255);
+border-radius:4;</string>
+   </property>
+   <property name="text">
+    <string>Draw Root (2)</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>btnEraser</zorder>
+  <zorder>radioBtnNormalSeed</zorder>
+  <zorder>radioBtnAbnormalSeed</zorder>
+  <zorder>radioBtnDeadSeed</zorder>
+  <zorder>gridLayoutWidget</zorder>
+  <zorder>btnPoint</zorder>
+  <zorder>btnDrawHyp</zorder>
+  <zorder>btnDrawRoot</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
