@@ -35,7 +35,7 @@ ProSeedling, still in its initial development phase, presents remarkable precisi
 <img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/47144125-be77-4e09-aa95-267b3af7b6d4" width=100% height=100%>
 
 
-# Equipament, transilumination technique and camera
+# Equipment used in the project
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/d452990d-fd1e-4707-b7ec-1d9c0f8a5303)
 
