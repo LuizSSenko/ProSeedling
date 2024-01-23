@@ -3,21 +3,24 @@
 
 The ProSeedling software is an advanced tool developed for the analysis of soybean seeds. It features specific characteristics and innovative functions:
 
-- **Superior Seedling Detection:**
-ProSeedling is capable of detecting features of interest even with low contrast between the color of the seedling and the background. Unlike other similar software, it uses the germination paper itself to acquire images of the seedlings, ensuring high performance in evaluations.
+**Superior Seedling Detection:**
+
+- ProSeedling is capable of detecting features of interest even with low contrast between the color of the seedling and the background. Unlike other similar software, it uses the germination paper itself to acquire images of the seedlings, ensuring high performance in evaluations.
 
 <img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/f22d0cd3-1548-4e79-aa39-8f13701fdc9f" width=100% height=100%>
 
 
 ## Minimizing Damage to Seedlings:
-A major advantage of ProSeedling is its ability to minimize the handling of seedlings during the analysis process. This is important as it reduces the risk of damage to the seedlings, which can affect the accuracy of the analysis results.
 
+- A major advantage of ProSeedling is its ability to minimize the handling of seedlings during the analysis process. This is important as it reduces the risk of damage to the seedlings, which can affect the accuracy of the analysis results.
 
 ## User-Friendly Interface:
-The software also includes a user interface, designed with PyQT5, to facilitate user interaction with the system. This makes ProSeedling accessible not just to specialized researchers, but also to other users who may be interested in seed analysis.
+
+- The software also includes a user interface, designed with PyQT5, to facilitate user interaction with the system. This makes ProSeedling accessible not just to specialized researchers, but also to other users who may be interested in seed analysis.
 
 ## Data Processing and Analysis:
-ProSeedling employs various open-source libraries for image processing and data manipulation. For instance, it uses OpenCV for image processing, Numpy and Scipy for numerical calculations, and Pandas for tabular data manipulation. This allows for comprehensive and detailed analysis of the captured images.
+
+- ProSeedling employs various open-source libraries for image processing and data manipulation. For instance, it uses OpenCV for image processing, Numpy and Scipy for numerical calculations, and Pandas for tabular data manipulation. This allows for comprehensive and detailed analysis of the captured images.
 
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/f5e28b9f-5f94-4861-ab3d-253ce653339d)
@@ -30,7 +33,8 @@ ProSeedling employs various open-source libraries for image processing and data 
 
 
 ## Proven efficiency:
-ProSeedling, still in its initial development phase, presents remarkable precision and accuracy. Compared to the Vigor-S, which already has proven efficiency for evaluating soybean seedlings, the results of the ProSeedling showed relevant consistency. However, it is essential to highlight the importance of conducting more experiments and improving settings to reach your full potential. A significant differentiator of ProSeedling is its open source nature, enabling researchers and professionals to adjust and adapt the software according to your needs. This feature expands the Future prospects for ProSeedling in the field of seed vigor assessment seeds.
+
+- ProSeedling, still in its initial development phase, presents remarkable precision and accuracy. Compared to the Vigor-S, which already has proven efficiency for evaluating soybean seedlings, the results of the ProSeedling showed relevant consistency. However, it is essential to highlight the importance of conducting more experiments and improving settings to reach your full potential. A significant differentiator of ProSeedling is its open source nature, enabling researchers and professionals to adjust and adapt the software according to your needs. This feature expands the Future prospects for ProSeedling in the field of seed vigor assessment seeds.
 
 <img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/991fdc46-6404-4a4f-933e-129e0cea2505" width=100% height=100%>
 
@@ -62,58 +66,58 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/55b33d7b-96ac-4f79-b505-8821a4a3caec)
 
-Enter in the main brach of ProSeedling project, open the "Calibration" Folder, download and print the .pdf file (Paying atention to choose the option "Standard" inside the scale section)
+- Enter in the main brach of ProSeedling project, open the "Calibration" Folder, download and print the .pdf file (Paying atention to choose the option "Standard" inside the scale section)
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/20415378-f496-4279-9749-6a339e43cc43)
 
-Take a picture with your equipment, it does not need to be exactly like ours, ProSeedling has options that allow the user to use diverse types of capturing systens.
+- Take a picture with your equipment, it does not need to be exactly like ours, ProSeedling has options that allow the user to use diverse types of capturing systens.
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/4b44977f-623d-4bbd-89f6-47f97958a6b8)
 
-In ProSeedling software, choose "Configuration" and then "Set Calibration". Click on "Load Calibration Image" and choose the configuration image captured by your system or enter manually the convertion value of how many pixels there's in 1cm.
+- In ProSeedling software, choose "Configuration" and then "Set Calibration". Click on "Load Calibration Image" and choose the configuration image captured by your system or enter manually the convertion value of how many pixels there's in 1cm.
 
 # Capturing images
 
-As mentioned earlier, your equipment does not need to be like ours, the only requisite is to have a controled light and a fixed camera for all the photos, in order to mantain accuracy and calibration. Don't worry about the ilumination sprectra either, as ProSeedling gives you the option to adjust the segmentation parameters.
+- As mentioned earlier, your equipment does not need to be like ours, the only requisite is to have a controled light and a fixed camera for all the photos, in order to mantain accuracy and calibration. Don't worry about the ilumination sprectra either, as ProSeedling gives you the option to adjust the segmentation parameters.
 
-**IMPORTANT:** It's a good practice to name the seedling images following this pattern:
-CULTIVAR + SAMPLE + REPETITION
+- **IMPORTANT:** It's a good practice to name the seedling images following this pattern: CULTIVAR + SAMPLE + REPETITION
 
-Also, organize the cultivar by folder, as the software reads the entire folder, the presence of two cultivars will be conflicting.
+- Also, organize the cultivar by folder, as the software reads the entire folder, the presence of two cultivars will be conflicting.
 
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/a59e1c1a-d84f-4cab-aba7-3f3ae6315880)
 
 
-In this example, the cultivar's name is NEO610IPRO, so i called it "N" + sample number + repetition letter = N1A, N1B... N2A, N2B...
+- In this example, the cultivar's name is NEO610IPRO, so i called it "N" + sample number + repetition letter = N1A, N1B... N2A, N2B...
 
 
 # Color calibration
-Your system will very likely have a different spectra of ilumination, in order to configure this difference ProSeedling has a HSV tunning function located in "Configuration", "Set HSV Values".
+
+- Your system will very likely have a different spectra of ilumination, in order to configure this difference ProSeedling has a HSV tunning function located in "Configuration", "Set HSV Values".
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/7a9a77ed-f0fe-49a1-bdfd-90e2f3d907c7)
 
-First move the sliders of HSV (Hue, Saturation, Value) in order to filter only the cotyledons.
+- First move the sliders of HSV (Hue, Saturation, Value) in order to filter only the cotyledons.
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/61a4afda-64eb-41ec-9480-3037c558dcac)
 
-After filtering the cotyledons, choose the option "Set Values for hypocotyl and root", and so the same, move the slider until you get the seedling image.
-As seem in the image above, some artifacts will be selected too, wich this is not a problem as ProSeedling will filter it out.
+- After filtering the cotyledons, choose the option "Set Values for hypocotyl and root", and so the same, move the slider until you get the seedling image.
+- As seem in the image above, some artifacts will be selected too, wich this is not a problem as ProSeedling will filter it out.
 
 # Image analysis
 
-Click on "File" and then "Open Folder", after that you need to choose the folder with your seedlings image.
-Afterwards, a popup will appear asking you the cultivar name, number of seeds, and other information. These information will be save inside the result file, and can be changed at anytime choosing "File", "Inputs".
+- Click on "File" and then "Open Folder", after that you need to choose the folder with your seedlings image.
+- Afterwards, a popup will appear asking you the cultivar name, number of seeds, and other information. These information will be save inside the .csv result file, and can be changed at anytime choosing "File", "Inputs".
 
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/023853ac-fc9d-4e1e-a178-cbaae98c34d8)
 
 
-This is the image you gonna see if everything went right.
+- This is the image you gonna see if everything went right.
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/8d1d4229-45e8-420d-b089-689a456b3110)
 
-This is the data related to the entire image. Pay attention to the Growth, Vigor and Uniformity number, as the max. value is 1000. If the values are looking a litte weird, is because the standard parameters dont fit your system, Let's change them: From the "Configuration" menu, click on "Change ettings".
+- This is the data related to the entire image. Pay attention to the Growth, Vigor and Uniformity number, as the max. value is 1000. If the values are looking a litte weird, is because the standard parameters dont fit your system, Let's change them: From the "Configuration" menu, click on "Change ettings".
 
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/47c556aa-1530-42d8-82e5-e74fb67dc2e2)
