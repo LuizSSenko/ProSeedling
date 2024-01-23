@@ -154,3 +154,5 @@ This is the data related to the entire image. Pay attention to the Growth, Vigor
 
 
 **Observation:** Everything will be saved in a .csv file in the image folder, you dont need to save each image mannualy, just click on the next button, fix the seedlings if needed and click on the next button again
+
+# Dealing with ProSeeding data
