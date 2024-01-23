@@ -6,7 +6,7 @@ The ProSeedling software is an advanced tool developed for the analysis of soybe
 - **Automated Seedling Image Capture:**
 ProSeedling is capable of detecting features of interest even with low contrast between the color of the seedling and the background. Unlike other similar software, it uses the germination paper itself to acquire images of the seedlings, ensuring high performance in evaluations.
 
-<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/f22d0cd3-1548-4e79-aa39-8f13701fdc9f" width=60% height=60%>
+<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/f22d0cd3-1548-4e79-aa39-8f13701fdc9f" width=100% height=100%>
 
 
 - **Minimizing Damage to Seedlings:**
@@ -16,10 +16,10 @@ A major advantage of ProSeedling is its ability to minimize the handling of seed
 - **Proven efficiency:**
 ProSeedling, still in its initial development phase, presents remarkable precision and accuracy. Compared to the Vigor-S, which already has proven efficiency for evaluating soybean seedlings, the results of the ProSeedling showed relevant consistency. However, it is essential to highlight the importance of conducting more experiments and improving settings to reach your full potential. A significant differentiator of ProSeedling is its open source nature, enabling researchers and professionals to adjust and adapt the software according to your needs. This feature expands the Future prospects for ProSeedling in the field of seed vigor assessment seeds.
 
-<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/991fdc46-6404-4a4f-933e-129e0cea2505" width=60% height=60%>
+<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/991fdc46-6404-4a4f-933e-129e0cea2505" width=100% height=100%>
 
 
-<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/47144125-be77-4e09-aa95-267b3af7b6d4" width=60% height=60%>
+<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/47144125-be77-4e09-aa95-267b3af7b6d4" width=100% height=100%>
 
 
 
