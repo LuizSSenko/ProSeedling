@@ -1,9 +1,7 @@
-# ProSeedling
+# ProSeedling 
 ## Computerized Seedling Processing for Seed Vigor Analysis
 
-The ProSeedling software is an advanced tool developed for the analysis of soybean seeds. It features specific characteristics and innovative functions:
-
-**Superior Seedling Detection:**
+### The ProSeedling software is an advanced tool developed for the analysis of soybean seeds. It features specific characteristics and innovative functions such as: Superior Seedling Detection:
 
 - ProSeedling is capable of detecting features of interest even with low contrast between the color of the seedling and the background. Unlike other similar software, it uses the germination paper itself to acquire images of the seedlings, ensuring high performance in evaluations.
 
