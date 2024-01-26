@@ -173,6 +173,21 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/23f028a3-5322-4613-8ebe-a6b36d865622)
 
+- Now you have the data you need from all the repetitions and samples of your lot of soybean seeds. Sometimes (more often than not) you need to analyse the data from the entire lot instead a single repetition. To solve this issue, i wrote a script that reads all the .csv files of the folder it is in and concatenate the information in a single .csv file.
+- It also adds new coluns with the variables transformated by the  (x + 0,5)^1/2 equation, if you need to normalise the values before doing the statistics.
+
+![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/86bfcdd7-af01-4a63-823b-75ec1d9f3a1a)
+
+- And to help the user to analyse a fast statistic about the lots, it plots a bar graph comparing each sample in terms of:  Hypocotyl average, root average, lenght average and the vigor, growth and uniformity, alongside its standard deviation line.
+
+![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/9a04d74c-3df0-4684-b0b3-3bad15248909)
+
+- Another mention is that the displayed graph is interactivew, you can change the axis names, scale, position and can save it in a lot of different formats.
+
+  
+
+
+
 
 
 
