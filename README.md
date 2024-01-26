@@ -188,7 +188,7 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 
 - Another mention is that the displayed graph is interactivew, you can change the axis names, scale, position and can save it in a lot of different formats.
 
-**OBSERVATION:**The script mentioned above was not part of the ProSeedling original development. For now it's a standalone script, but i have plans to include it on the ProSeedling software menu. Also, feel free to change anything you want, but add to the project as a branch, respecting the GNU license.
+**OBSERVATION:** The script mentioned above was not part of the ProSeedling original development. For now it's a standalone script, but i have plans to include it on the ProSeedling software menu. Also, feel free to change anything you want, but add to the project as a branch, respecting the GNU license.
 
   
 
