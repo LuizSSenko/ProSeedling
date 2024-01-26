@@ -160,3 +160,20 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 **Observation:** Everything will be saved in a .csv file in the image folder, you dont need to save each image mannualy, just click on the next button, fix the seedlings if needed and click on the next button again
 
 # Dealing with ProSeeding data
+
+- The software will save the results in the same directory as the image folder you selected, as seem below where "0" is the lot number, inputed in the beggining of the analysis:
+
+![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/3098a73a-2833-4457-bf7b-d776f7bc4300)
+
+- Inside the "0" folder, you will find two folders with self explanatory names "processed_images" and "results", wuere you will find the processed images and the results:
+
+![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/cdce2647-bef9-44ee-9cbc-1928dfb228e2)
+
+- The .csv files follow the nomeclature of the image that originated the results, and the formating egual as the Vigor-S software:
+
+![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/23f028a3-5322-4613-8ebe-a6b36d865622)
+
+
+
+
+
