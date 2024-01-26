@@ -36,16 +36,6 @@ The ProSeedling software is an advanced tool developed for the analysis of soybe
 
 - ProSeedling, still in its initial development phase, presents remarkable precision and accuracy. Compared to the Vigor-S, which already has proven efficiency for evaluating soybean seedlings, the results of the ProSeedling showed relevant consistency. However, it is essential to highlight the importance of conducting more experiments and improving settings to reach your full potential. A significant differentiator of ProSeedling is its open source nature, enabling researchers and professionals to adjust and adapt the software according to your needs. This feature expands the Future prospects for ProSeedling in the field of seed vigor assessment seeds.
 
-<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/991fdc46-6404-4a4f-933e-129e0cea2505" width=100% height=100%>
-
-
-<img src="https://github.com/LuizSSenko/ProSeedling/assets/140913035/47144125-be77-4e09-aa95-267b3af7b6d4" width=100% height=100%>
-
-
-
-
-
-
 
 # Editing everything below this line (Software Manual)
 
@@ -174,15 +164,21 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/23f028a3-5322-4613-8ebe-a6b36d865622)
 
 - Now you have the data you need from all the repetitions and samples of your lot of soybean seeds. Sometimes (more often than not) you need to analyse the data from the entire lot instead a single repetition. To solve this issue, i wrote a script that reads all the .csv files of the folder it is in and concatenate the information in a single .csv file.
+
+![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/ab310181-1f9f-488f-8966-989bdc02b5c5)
+
 - It also adds new coluns with the variables transformated by the  (x + 0,5)^1/2 equation, if you need to normalise the values before doing the statistics.
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/86bfcdd7-af01-4a63-823b-75ec1d9f3a1a)
+
 
 - And to help the user to analyse a fast statistic about the lots, it plots a bar graph comparing each sample in terms of:  Hypocotyl average, root average, lenght average and the vigor, growth and uniformity, alongside its standard deviation line.
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/9a04d74c-3df0-4684-b0b3-3bad15248909)
 
 - Another mention is that the displayed graph is interactivew, you can change the axis names, scale, position and can save it in a lot of different formats.
+
+**OBSERVATION:**The script mentioned above was not part of the ProSeedling original development. For now it's a standalone script, but i have plans to include it on the ProSeedling software menu. Also, feel free to change anything you want, but add to the project as a branch, respecting the GNU license.
 
   
 
