@@ -1,3 +1,5 @@
+
+
 """ This file is part of ProSeedling project.
     The ProSeedling Project, funded by FAPESP, has been developed
     by Luiz Gustavo Schultz Senko as part of his Master's Thesis
@@ -20,7 +22,7 @@ from PyQt5 import QtWidgets, QtMultimedia, QtCore,QtGui
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtCore import Qt
 from PyQt5.uic import loadUi
-from PyQt5.QtWidgets import QWidget, QFileDialog
+from PyQt5.QtWidgets import QWidget, QFileDialog, QMessageBox
 from PyQt5.QtWidgets import QApplication
 
 import sys
@@ -41,6 +43,7 @@ from datetime import datetime
 from class_photo_viewer import PhotoViewer
 from req_classes.pixel_to_cm import get_pixel_to_cm
 from req_classes.seedEditor import SeedEditor
+from req_classes.dataConcat import dataConcat
 from utils_pyqt5 import showdialog
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -49,15 +52,15 @@ class MainWindow(QtWidgets.QMainWindow):
 
         loadUi(r'UI_files\mainWindow_ui.ui',self)
         sizeObject = QtWidgets.QDesktopWidget().screenGeometry(-1)
-        print(" Screen size : "  + str(sizeObject.height()) + "x"  + str(sizeObject.width()))   
-        resized_w = sizeObject.width()
-        resized_h = sizeObject.height() - 100
-        self.setMaximumSize(resized_w,resized_h)
-        self.org_design_w = 1920
-        self.org_design_h = 1080
+        #print(" Screen size : "  + str(sizeObject.height()) + "x"  + str(sizeObject.width()))   
+        #resized_w = sizeObject.width()
+        #resized_h = sizeObject.height() - 100
+        #self.setMaximumSize(resized_w,resized_h)
+        #self.org_design_w = 1920
+        #self.org_design_h = 1080
 
         ## load
-
+        self.dataConcat = dataConcat()  # Crie uma instância da classe de processamento
         self.viewer = PhotoViewer(self)
         self.h_layout_img.addWidget(self.viewer)
         self.viewer.mainUiObj = self
@@ -69,9 +72,9 @@ class MainWindow(QtWidgets.QMainWindow):
 #_________________ ADD MENUS 'FILE' AND 'CONFIGURATION'______________________________________________________________
         
         filemenu = self.menubar.addMenu('File')
-        
         filemenu.addAction('Open Folder', self.browse_input_folder)
         filemenu.addAction('Inputs', self.give_inputs)
+        filemenu.addAction('join results', self.run_script)  # Junta os resultados em um só arquivo
       
         menuConfig = self.menubar.addMenu('Configuration')
         menuConfig.addAction("Import Configurations", self.import_settings)
@@ -241,6 +244,15 @@ class MainWindow(QtWidgets.QMainWindow):
         
         self.seedEditorObj = SeedEditor(self)
 
+    def run_script(self):
+        folder_path = QFileDialog.getExistingDirectory(self, 'Select Folder')
+        if folder_path:
+            try:
+                self.dataConcat.process_all_files_dynamically(folder_path)
+                QMessageBox.information(self, 'Success', 'Data processed successfully!')
+            except Exception as e:
+                QMessageBox.critical(self, 'Error', f'Failed to execute algorithm: {e}')
+            
     def restore_default_settings(self):
         ################ Inputs
         self.n_segments_each_skeleton = 15           # divisions to make in each length (Increase this for finer results)
