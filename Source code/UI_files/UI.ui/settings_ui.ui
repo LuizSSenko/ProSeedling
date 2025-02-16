@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(244, 247, 250);</string>
+  </property>
+  <widget class="QPushButton" name="btn_apply">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>530</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>441</width>
+     <height>488</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_left">
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Average root thickness (pixels)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Max dead seed length (cm)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="lineEdit_deadSeedL">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>80</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Abnormal seed max length (cm)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="lineEdit_abnormal_seedL">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>130</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Normal seed max length (cm)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLineEdit" name="lineEdit_normal_seedL">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>150</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Average seedling length (cm)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLineEdit" name="lineEdit_avg_seed_length">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>200</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0" colspan="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="16" column="0">
+     <widget class="QLabel" name="label_12">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Weight Factor Ph</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="1">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_ph">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.050000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.100000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Weight Factor Pr</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="1">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_pr">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.050000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.900000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Weight Factor Pu</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="1">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_pu">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="maximum">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.050000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.700000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0">
+     <widget class="QLabel" name="label_10">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Weight Factor Pc</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="1">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_pc">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.050000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.300000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineEdit_avg_rad_length">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>13</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>No. of segments of each seed</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="spinBox_n_seg">
+      <property name="styleSheet">
+       <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="minimum">
+       <number>10</number>
+      </property>
+      <property name="maximum">
+       <number>20</number>
+      </property>
+      <property name="value">
+       <number>15</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btn_cancel">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>530</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 10pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

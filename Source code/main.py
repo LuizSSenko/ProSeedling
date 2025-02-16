@@ -1,4 +1,4 @@
-
+# main.py
 
 """ This file is part of ProSeedling project.
     The ProSeedling Project, funded by FAPESP, has been developed
@@ -18,10 +18,10 @@
     You should have received a copy of the GNU General Public License
     along with ProSeedling.  If not, see <https://www.gnu.org/licenses/>
 """
-from PyQt5 import QtWidgets, QtMultimedia, QtCore,QtGui
+from PyQt5 import QtWidgets, QtMultimedia, QtCore, QtGui
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtCore import Qt
-from PyQt5.uic import loadUi
+from UI_files.mainWindow_ui import Ui_MainWindow  # Importa a interface convertida
 from PyQt5.QtWidgets import QWidget, QFileDialog, QMessageBox
 from PyQt5.QtWidgets import QApplication
 
@@ -37,20 +37,17 @@ import utils_pyqt5 as ut
 from utils import check_if_point_lies_xywh_box
 from main_processor import Main_Processor
 from req_classes.settings_cls import GlobalSettings
-from req_classes.setting_pixel_cm import CalibrationSettings
 from req_classes.setHSVclass import SetHSV
 from datetime import datetime
 from class_photo_viewer import PhotoViewer
-from req_classes.pixel_to_cm import get_pixel_to_cm
 from req_classes.seedEditor import SeedEditor
 from req_classes.dataConcat import dataConcat
 from utils_pyqt5 import showdialog
 
-class MainWindow(QtWidgets.QMainWindow):
-    def __init__(self):
-        QtWidgets.QDialog.__init__(self)
-
-        loadUi(r'UI_files\mainWindow_ui.ui',self)
+class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setupUi(self)  # Configura a interface no próprio MainWindow
         sizeObject = QtWidgets.QDesktopWidget().screenGeometry(-1)
         #print(" Screen size : "  + str(sizeObject.height()) + "x"  + str(sizeObject.width()))   
         #resized_w = sizeObject.width()
@@ -81,7 +78,7 @@ class MainWindow(QtWidgets.QMainWindow):
         menuConfig.addAction("Export Settings", self.export_settings)
         menuConfig.addAction('Change settings', self.change_settings)
         menuConfig.addAction("Set HSV values",self.set_hsv_values)
-        menuConfig.addAction("Set calibration",self.set_pixel_cm_values)
+        menuConfig.addAction("Set calibration", self.set_pixel_cm_values)
         menuConfig.addAction("Restore Defaults",self.restore_default_settings)
         
         #___ EDIT STYLES ______________________________________________________________
@@ -242,13 +239,13 @@ class MainWindow(QtWidgets.QMainWindow):
         imgLogo = cv2.imread('resources/icon.png')
         ut.apply_img_to_label_object('resources/ProSeedling_logo_cropped_transparent.png', self.label_logo)
         
-        self.seedEditorObj = SeedEditor(self)
+        self.seedEditorObj = SeedEditor(mainUi=self)
 
     def run_script(self):
         folder_path = QFileDialog.getExistingDirectory(self, 'Select Folder')
         if folder_path:
             try:
-                self.dataConcat.process_all_files_dynamically(folder_path)
+                self.dataConcat.csv_concat(folder_path)
                 QMessageBox.information(self, 'Success', 'Data processed successfully!')
             except Exception as e:
                 QMessageBox.critical(self, 'Error', f'Failed to execute algorithm: {e}')
@@ -305,11 +302,12 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def set_pixel_cm_values(self):
         """Function to upload caliberation image"""
+        from req_classes.calibration_settings import CalibrationSettings
 
         # 1. upload image with square box printed over it
         # 2. extract square and 
 
-        self.window = CalibrationSettings(self)
+        self.window = CalibrationSettings(mainUi=self)
         self.window.show()
         self.process_img_and_display_results()
 
@@ -352,11 +350,12 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def show_seed_editor_window(self):
         try:
-            self.window = self.seedEditorObj
-            self.window.show()
-            print("window shown")
+            # Exibe a instância já criada de SeedEditor
+            self.seedEditorObj.show()
+            print("Seed editor window shown")
         except Exception as e:
             print(traceback.format_exc())
+
         
 
 
@@ -425,11 +424,10 @@ class MainWindow(QtWidgets.QMainWindow):
         self.mainProcessor.hsv_values_seed_heads = self.hsv_values_seed_heads
 
     def set_hsv_values(self):
-        # if len(self.imagePaths)>0:
-        self.window = SetHSV(self)
+        # Aqui passamos 'parent=self' e 'mainUi=self' para que a classe SetHSV
+        # tenha acesso à interface principal.
+        self.window = SetHSV(parent=self, mainUi=self)
         self.window.show()
-        # else:
-        #     ut.showdialog("Please select a image folder before.. and then you can change HSV values")
 
     def give_inputs(self):
         # QtWidgets.QInputDialog.setStyleSheet()
@@ -837,10 +835,10 @@ class TableModel(QtCore.QAbstractTableModel):
     
 
 if __name__ == '__main__':
+    import sys
     app = QtWidgets.QApplication(sys.argv)
-    w = MainWindow()
-    w.show()
-    w.setWindowTitle("ProSeedling Software")
-    w.setWindowIcon(QtGui.QIcon(r'resources/icon.png'))
+    window = MainWindow()
+    window.show()
+    window.setWindowTitle("ProSeedling Software")
+    window.setWindowIcon(QtGui.QIcon(r'resources/icon.png'))
     sys.exit(app.exec())
-    
