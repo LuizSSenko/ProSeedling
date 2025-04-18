@@ -24,10 +24,12 @@
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/f5e28b9f-5f94-4861-ab3d-253ce653339d)
 
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/c4b3715f-da83-46d1-bab5-cda4995083b0)
+![image](https://github.com/user-attachments/assets/77b77790-8031-4b87-b5f0-9cb217f32e1f)
 
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/59c12655-e787-4795-80bb-7c985f202530)
+
+![image](https://github.com/user-attachments/assets/bd5ef4d2-f820-4206-9e02-292f6c0f8d70)
+
 
 
 ## Proven efficiency:
@@ -67,7 +69,8 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 
 - Take a picture with your equipment; it does not need to be exactly like ours. ProSeedling has options that allow the user to use diverse types of capturing systems.
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/4b44977f-623d-4bbd-89f6-47f97958a6b8)
+![image](https://github.com/user-attachments/assets/8b6c2cc3-8398-4213-8d65-99983276d1d0)
+
 
 - In the ProSeedling software, choose "Configuration," and then "Set Calibration." Click on "Load Calibration Image" and choose the configuration image captured by your system or enter manually the conversion value of how many pixels there are in 1 cm.
 
@@ -91,11 +94,13 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 
 - Your system will very likely have a different spectrum of illumination. To configure this difference, ProSeedling has an HSV tuning function located in "Configuration," "Set HSV Values."
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/7a9a77ed-f0fe-49a1-bdfd-90e2f3d907c7)
+![image](https://github.com/user-attachments/assets/d9dc6ef4-eaa3-4764-96c8-a9dc276ad09d)
+
 
 - First, move the sliders of HSV (Hue, Saturation, Value) to filter only the cotyledons.
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/61a4afda-64eb-41ec-9480-3037c558dcac)
+![image](https://github.com/user-attachments/assets/f6f324d8-e0bb-4132-852c-dc590363661e)
+
 
 - After filtering the cotyledons, choose the option "Set Values for hypocotyl and root," and do the same: move the slider until you get the seedling image.
 - As seen in the image above, some artifacts will be selected too, which is not a problem as ProSeedling will filter them out.
@@ -117,17 +122,15 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 - Let's change them: From the "Configuration" menu, click on "Change Settings."
 
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/47c556aa-1530-42d8-82e5-e74fb67dc2e2)
+![image](https://github.com/user-attachments/assets/f5d2a088-cc6b-4f35-8c02-411cf8e3cdd2)
+
 
 - The upper part of the window is related to the image, and the lower part is related to the vigor index calculation parameters.
 - In the upper part, "Number of segments" and "root thickness" are used to detect and sort what is hypocotyl and root, finding the breakpoint between them. Play around with the values and find the ones that suit your system.
 - "Dead," "Normal," and "Abnormal" parameters are related to the seed classification, as the names suggest: Dead, Normal, and Abnormal. They are used in the formula to calculate the Growth, Uniformity, and Vigor indexes. The best way to configure these parameters is by capturing images of distinct seed conditions and adjusting the parameters until they are correct.
 - "Average seed length = 12.5" is related to an average soybean seedling at 3 days old.
 - The lower part is related to Vigor calculation parameters. I advise you not to change these values. I have provided the option to change them because someone may try to use the software on different species other than soybean, and these values may not work with them.
-
-  ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/f9d429db-1bcb-4989-bb58-9ee7cc10d03b)
-
-- Finishing this section: in the menu "Configurations," you have the option to export and import configurations, as well as returning to the default settings.
+- In the lower part of the window you have the option to export and import configurations, as well as returning to the default settings.
 
 # Fixing segmentation errors
 
@@ -142,13 +145,15 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 
 - In the main screen, with zero percent zoom, left-click on top of the seedling you need to edit. Alternatively, you can select it by clicking on the table. The seed editor will open.
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/9f609b4d-9eec-4ad1-b2c9-ed87dff293a8)
+![image](https://github.com/user-attachments/assets/c6c007f3-3b40-46bb-ac3e-217a2123d8c5)
+
 
 - In the seed editor, we have the options to change the breakpoint position (everything above will be hypocotyl, and everything below will be root), erase lines, manually draw lines, and change the seed status.
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/d7f08d8d-6ab8-48f3-a715-e5b5e9405f5a)
+![image](https://github.com/user-attachments/assets/51508bac-31c3-43d0-a34c-345cb8c111e1)
 
 - As you change the seed parameters, the seed information will update in real-time as well.
+- You can use the keyboard's arrows key to change the seedling selected to edit.
 - TIP: Since the software (1.0) doesn't have the seed status on the main window's table, you can use the seed editor to configure the seed status values in the "Change settings" menu.
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/ebf224f3-b931-4170-8d00-f37bd6fcf6d0)
@@ -166,27 +171,15 @@ The figure above shows an image of three-day-old soybean seedlings, captured usi
 
 ![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/cdce2647-bef9-44ee-9cbc-1928dfb228e2)
 
-- The .csv files follow the nomenclature of the image that originated the results, and the formatting is equal to the Vigor-S software:
+- The .csv files follow the nomenclature of the image that originated the results, and they will have the following formatting:
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/23f028a3-5322-4613-8ebe-a6b36d865622)
-
-- Now you have the data you need from all the repetitions and samples of your lot of soybean seeds. Sometimes (more often than not), you need to analyze the data from the entire lot instead of a single repetition. To solve this issue, I wrote a script that reads all the .csv files in the folder it is in and concatenates the information into a single .csv file.
-- THe Script is located on Github, in the same directory as the ProSeedling program.
-
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/ab310181-1f9f-488f-8966-989bdc02b5c5)
-
-- It also adds new columns with the variables transformed by the (x + 0.5)^1/2 equation, if you need to normalize the values before doing the statistics.
-
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/86bfcdd7-af01-4a63-823b-75ec1d9f3a1a)
+![image](https://github.com/user-attachments/assets/36a7eddc-c434-401e-b565-8212fa345039)
 
 
-- And to help the user to analyse a fast statistic about the lots, it plots a bar graph comparing each sample in terms of:  Hypocotyl average, root average, lenght average and the vigor, growth and uniformity, alongside its standard deviation line.
+- Now you have the data you need from all the repetitions and samples of your lot of soybean seeds. Sometimes (more often than not), you need to analyze the data from the entire lot instead of a single repetition. To solve this issue, concatenated file will be present in the same folder as the other .csv, named "ProSeedling_data.csv"
 
-![image](https://github.com/LuizSSenko/ProSeedling/assets/140913035/9a04d74c-3df0-4684-b0b3-3bad15248909)
+![image](https://github.com/user-attachments/assets/5caf30ca-7aa9-4073-b0e0-6d948bbea8fa)
 
-- Another mention is that the displayed graph is interactivew, you can change the axis names, scale, position and can save it in a lot of different formats.
-
-**OBSERVATION:** The script mentioned above was not part of the ProSeedling original development. For now it's a standalone script, but i have plans to include it on the ProSeedling software menu. Also, feel free to change anything you want, but add to the project as a branch, respecting the GNU license.
 
   
 
