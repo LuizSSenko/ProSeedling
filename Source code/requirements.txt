@@ -1,0 +1,10 @@
+numpy==1.25.2
+opencv_python==4.8.0.76
+pandas==2.0.3
+Pillow==9.4.0
+Pillow==11.1.0
+PyQt5==5.15.11
+PyQt5_sip==12.11.1
+Shapely==2.0.7
+skimage==0.0
+
